@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       toJpeg(ref.current)
         .then((dataUrl) => {
           const link = document.createElement("a");
-          link.download = "post.png";
+          link.download = "post";
           link.href = dataUrl;
           link.click();
         })
